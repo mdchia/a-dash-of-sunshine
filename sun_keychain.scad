@@ -1,5 +1,6 @@
 // Sun keychain
 // by Ming-Dao Chia
+// inspired by Hannah Jang
 
 // Settings
 height=1.4; // Total thickness of keychain
@@ -64,6 +65,7 @@ module sun_keychain(){
     translate([(flare_size/2*flare_length)+flare_distance+keyring/2,0,0])
     sun_keyring();
     // keyring stability hack (small keychains only)
+    color("gray")
     translate([((flare_size*flare_length)+flare_distance)-
     (keyring+flare_size/4),-flare_size*flare_width/2,0])
     cube([flare_size/2,flare_size*flare_width,height]);
